@@ -5,21 +5,21 @@ from Shoes.serializers import Manufacturer_Serializer, ShoeColor_Serializer, Sho
 # Create your views here.
 
 
-class ManufacturerViewSet(viewsets.ModelViewSet):
+class ManufacturerViewSet(viewsets.ViewSet):
     serializer_class = Manufacturer_Serializer
     queryset = Manufacturer.objects.all()
 
 
-class ShoeColorViewSet(viewsets.ModelViewSet):
+class ShoeColorViewSet(viewsets.ViewSet):
     serializer_class = ShoeColor_Serializer
     queryset = ShoeColor.objects.all()
 
 
-class ShoeTypeViewSet(viewsets.ModelViewSet):
+class ShoeTypeViewSet(viewsets.ViewSet):
     serializer_class = ShoeType_Serializer
     queryset = ShoeType.objects.all()
 
 
-class ShoeViewSet(viewsets.ModelViewSet):
+class ShoeViewSet(viewsets.ViewSet):
     serializer_class = Shoe_Serializer
     queryset = Shoe.objects.all()

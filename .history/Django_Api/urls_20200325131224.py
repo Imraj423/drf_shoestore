@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
-from Shoes import views
+
+from . import views
 from rest_framework import routers
-from Shoes import models
 
 router = routers.DefaultRouter()
 router.register(r'manufacturers', views.ManufacturerViewSet)
